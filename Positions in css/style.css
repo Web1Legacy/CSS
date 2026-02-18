@@ -2,6 +2,7 @@
     width: 600px;
     height: 600px;
     background-color: aqua;
+    /* position: relative; */
 }
 
 .box{
@@ -18,16 +19,23 @@
 .relative{
     background-color: green;
     position: relative;
-    top: 50px;
-    left: 100px;
+    top: 100px;
+    left: 200px;
 }
 
 .absolute{
     background-color: blue;
+    position:absolute;
+    top: 0;
+    right:0;
 }
 
 .fixed{
     background-color: orange;
+    /* z-index: 5; */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .sticky{
