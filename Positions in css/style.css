@@ -40,4 +40,7 @@
 
 .sticky{
     background-color: purple;
+    position: sticky;
+    top: 300px;
+    left: 120px;
 }
