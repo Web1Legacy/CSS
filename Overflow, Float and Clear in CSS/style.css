@@ -2,9 +2,29 @@
     /* width: 400px; */
     /* height:400px; */
     /* border: 1px solid black; */
+
     /* overflow: visible;
     /* overflow: hidden; */
     /* overflow: scroll; */
-    /* overflow: auto; */ 
-    /* text-align: justify; */
+    /* overflow: auto; */
+
+    text-align: justify;
+
+}
+
+.subcontainer {
+    overflow: auto;
+}
+
+.img1 {
+    float: right;
+}
+
+.img2 {
+    float: left;
+}
+
+.p2{
+    clear: both;
+
 }
