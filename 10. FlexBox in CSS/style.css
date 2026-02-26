@@ -13,10 +13,20 @@
     /* flex-direction: row;*/
 
     /* flex-wrap: wrap; */
-    gap: 10px;
+    /* gap: 10px; */
     /* row-gap: 10px; */
 
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+
+    /* flex-start(Default), flex-end, center, space-around, space-evenly, space-between */
+    /* justify-content: it is a alignment of Content in horizontal direction (X-Axis) */
+    justify-content: space-between;
+
+    /* end, center, baseline */
+    /* align-items: it is a alignment of Content in vertical direction (Y-Axis) */
+    align-items: center;
+
+    align-content:space-around;
 }
 
 .box{
