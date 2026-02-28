@@ -6,23 +6,37 @@
 
 .container{
     border: solid 2px red;
-    height: 400px;
+    height: 700px;
     display: grid;
     /* gap: 10px; */
     row-gap: 18px;
     column-gap: 12px;
 
     /* grid-template-columns: 25vw 200px 50%; */
-    grid-template-columns: 200px 200px;  
+    grid-template-columns: 200px 200px 200px;  
     /* grid-template-rows:150px  70px 110px;  
     grid-auto-rows: 120px; */
 
-    justify-content:baseline;
+    /* justify-content:baseline; */
 
-    align-content: center;
+    /* align-content: center; */
 }
 
 .box{
     border: solid 2px green;
     padding: 12px;
+}
+
+#box-1{
+    background-color: lightblue;
+    /* justify-self: center; */ /* Horizontal alignment */
+    /* align-self: center; */ /*Vertical alignment */ 
+
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+
+    /* ⬆️ Short hand Operator for above  */
+    grid-column: 1 / 4;
+
+    
 }
