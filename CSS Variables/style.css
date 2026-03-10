@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 45px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    background-color:aqua;   
+}
+
+.box{
+    padding: 20px;
+    
+}
