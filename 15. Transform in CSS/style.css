@@ -12,8 +12,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* SCALE */
     /* transform: scale(1.5); */
     /* transform: scaleX(1.5); scaleY(2); */
     /* transform: scaleX(1.5); */
-    transform: scale(1.5,2);
-}
+    /* transform: scale(1.5,2); */
+    /* transform: scaleZ(1.5); */
+
+
+    /* SKEW */
+    /* transform: skew(25deg); */
+    /* transform: skew(25deg, 20deg); */
+
+    /* TRANSLATE */
+    /* transform: translate(20px, 20px); */
+    /* transform: translate(-20px, -20px); */
+    /* transform: translate(50%, 50%); */
+
+    /* ROTATE  */
+    /* transform: rotate(90deg); */
+    /* transform: rotateX(50deg); */
+    /* transform: rotateY(50deg); */
+    /* transform: rotateZ(50deg); */
+
+    /* USING ALL THE PROPERTIES TOGETHER */
+    /* transform: scale(1.3) rotate(45deg) translate(50%) skew(30deg); */
+
+
+    transform: rotate(70deg);
+    transform-origin: top left;
+} 
