@@ -9,6 +9,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 200px;
 }
 
 .container{
@@ -16,6 +18,8 @@ body{
     height: 280px;
     border: 4px solid white;
     animation: orbit 5s linear infinite;
+    border-radius: 50%;
+
 }
 
 .box{
@@ -26,13 +30,13 @@ body{
     /* transition: 1s ease-in-out; */
     /* animation-name: ShiftTheBox; */
     /* animation-name: slide-in; */
-
+    animation-name: orbit;
     animation-duration: 2s;
-    animation-delay: 2s;
+    /* animation-delay: 2s; */
     /* animation-iteration-count: infinite; */
     /* animation-direction: alternate-reverse; */
     animation-timing-function: linear;
-    animation-fill-mode: both ;
+    animation-fill-mode: none;
 }
 
 /* .box:hover{
@@ -41,10 +45,10 @@ body{
 
 @keyframes orbit{
     from{
-        transform: rotate(0%);
+        transform: rotate(0deg);
     }
     to{
-        transform: rotate(360%);
+        transform: rotate(360deg);
     }
 }
 
@@ -69,5 +73,38 @@ body{
     }
     75%{
         transform: translate(0, 200px);
+    }
+}
+
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: loading 1s infinite  alternate ;
+}
+
+.dot:nth-child(even){
+    animation-delay: 0.1s;
+}
+
+/* .dot:nth-child(4){
+    animation-delay: 0.1s;
+} */
+
+@keyframes loading{
+   from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
     }
 }
